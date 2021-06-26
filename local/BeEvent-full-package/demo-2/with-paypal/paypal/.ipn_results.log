@@ -1,0 +1,75 @@
+[08/13/2015 1:35 PM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=20.00 
+invoice=1320103588 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=2866 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=06:35:44 Aug 13, 2015 PDT 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=0.88 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=ARoXFbv.voH8EPxrw5258771fARWAkdbP37yq2FS9cxKKZSVEuTP0VW7 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=4UK694962A008984F 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=---Select Service --- 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=0.88 
+quantity1=1 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=20.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=20.00 
+ipn_track_id=59ee2d0158978 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Thu, 13 Aug 2015 13:35:48 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ZAPQUIc-wbZpA5yBpbSbzqNeHyxniLD59M1NzPgQK-AdHbIAAt3bt99H-aERuVcduazzvr3HkZEjBBefLsHq2sbyxx8giynexI30-TbgX5LEwrfbpNH-kmi5bh3LR8TwYo5LKEjOEfIOrV9g1ciO-4ZsAP4VaPXv3X0KK4oOnPNRkbizD3rzJRmYx-g9zxXH3bnzQbLRnfstAAeK06QtlQv4dGSC9xLEnZa-mpil8zY6aTFFME4M5_4Q8oqfpjy8wDy6s2syqyUInbgwSW_uHUWudhcw_UiFxbJrTVHV8i0IPM5KUhEweK5pD3g8dEyG6TOO4l_Cfznk1kHWrsReg5AofrBHso6TBAisk_lImA2LsugaIHso5GJFOurinA1IDZvEAnqhgF3fNCfY0QsPcBS5AqPv557WeiTzeSjBv7ysV0vN_YJQxmrhY3u; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 10-Aug-2025 13:35:49 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 12-Aug-2020 13:35:49 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1439472948786368; path=/; expires=Sat, 05-Aug-45 13:35:48 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: 7ac4ed65bbe88
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D882756693; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1439472948769371; path=/; expires=Sat, 05-Aug-45 13:35:48 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+

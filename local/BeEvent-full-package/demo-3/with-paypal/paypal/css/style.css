@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.success_template {
+  border: 1px solid #ccc;
+  font-family: arial;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.success_template table {
+  border-collapse: collapse;
+  margin: 30px auto 30px;
+  padding: 0 20px;
+  width: 90%;
+}
+.success_template h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+.success_table tr td, .success_table tr th {
+  border: 1px solid #ccc;
+  padding: 15px 40px;
+  text-align: left;
+}
+.col-1 {
+	font-weight:bold;
+}
+.success_template .logo {
+  background: #333 none repeat scroll 0 0;
+  padding: 28px 0;
+}
+.success_template h2 {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 90%;
+}
+.button {
+  background: #de302f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  margin: auto auto 40px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.5s linear 0s;
+}

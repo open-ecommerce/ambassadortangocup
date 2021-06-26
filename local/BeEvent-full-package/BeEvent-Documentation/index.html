@@ -1,0 +1,598 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>BeEvent - Conference & Event HTML Template</title>
+	<!--Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <!--Custome Style -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!--shCoreDefault Style -->
+    <link rel="stylesheet" href="assets/css/shCoreDefault.css" type="text/css">
+    <!--FontAwesome Font Style -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+</head>
+<body data-spy="scroll" data-target="#navigation">
+    
+    <header id="top">
+    	<div class="container">
+        	<h1>BeEvent - Conference & Event HTML Template Documentation</h1>
+            <p>This Documentation make you easier to customize the look of the template as you want.</p>  
+		</div>
+	</header>
+    
+    <div class="container">
+    	<div class="row">
+            <div class="col-sm-3" id="navigation">
+                
+                <ul class="nav nav-list">
+                    <li><a href="#html"><i class="fa fa-chevron-right"></i> HTML Structure</a>
+                    	<ul>
+                          	<li><a href="#sitelogo">Site Logo</a></li>
+                            <li><a href="#navigations">Navigation</a></li>
+                            <li><a href="#countdown">Countdown</a></li>
+                            <li><a href="#sectionheading">Section Heading</a></li>
+                            <li><a href="#bgcolor">Section Background Color</a></li>
+                            <li><a href="#footer_elements">Footer Elements</a></li>
+                            <li><a href="#fontawesome">FontAwesome Icon Packs</a></li>
+                            
+                         </ul>
+                    </li>
+                    <li><a href="#eventbrite"><i class="fa fa-chevron-right"></i> Eventbrite</a></li>
+                    <li><a href="#map"><i class="fa fa-chevron-right"></i> Map Element</a></li>
+                    <li><a href="#multi-color"><i class="fa fa-chevron-right"></i> Multi Color Option </a></li>
+                    <li><a href="#mail-chimp"><i class="fa fa-chevron-right"></i> Mail Chimp Newsletter </a></li>
+                    <li><a href="#paypal"><i class="fa fa-chevron-right"></i> Set your PayPal Account</a></li>
+                    <li><a href="#pricevalue"><i class="fa fa-chevron-right"></i> Change Plan Price Value</a></li>
+                    <li><a href="#css"><i class="fa fa-chevron-right"></i> CSS Structure</a></li>
+                    <li><a href="#scripts"><i class="fa fa-chevron-right"></i> Scripts</a></li>
+                    <li><a href="#php"><i class="fa fa-chevron-right"></i> PHP Integration</a></li>
+                    <li><a href="#image"><i class="fa fa-chevron-right"></i> Image Files</a></li>
+                    <li><a href="#credits"><i class="fa fa-chevron-right"></i> Credits</a></li>
+                </ul>
+                
+            </div>
+            <div class="col-sm-9" id="content">
+                <div class="alert">
+                <h4>Thank you very much for purchasing BeEvent - Conference & Event HTML Template.</h4>
+                
+                </div>
+                
+                <div id="html" class="heading_padding">
+	                <h3>HTML Structure</h3>
+                </div>
+                <hr />
+                <p>This template uses the <strong>1170 grid system (12 columns)</strong> which will help streamline any customization you wish to make. If you're unfamiliar with the 1170 grid system, be sure to read about it <strong><a href="http://getbootstrap.com/examples/grid/" target="_blank">here!</a></strong></p>
+                <p>The main structure of this site is wrapped in a <strong>'container'</strong> div. Inside of that div you will find each major section of the site given an appropritae grid size all equalling 12 columns in length. For example, the <strong>'#abut_event'</strong> element has a class of <strong>'col-sm-8'</strong> and the <strong>'#event_images'</strong> element has a class of <strong>'col-sm-4'</strong>. The total columns equals <strong>12 columns</strong>.</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                &lt;section class="section-padding"&gt;
+                    &lt;div class="container"&gt;	
+                        &lt;div class="row"&gt;
+                            &lt;div id="abut_event" class="col-sm-8"&gt;&lt;/div&gt;
+                            &lt;div id="event_images" class="col-sm-4"&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/section&gt;
+                </pre>
+                <div class="info"><p><span class="label label-warning">Note:</span> If you want to add padding in section use <strong>class="section-padding"</strong>  
+                140px padding top & 140px padding bottom added in section. You don't need padding remove <strong>class="section-padding".</strong> </p></div>
+                
+                
+                
+                <div id="sitelogo" class="sub_headding">
+	                <h4>Site Logo</h4>
+                </div>
+                <p>You can change the main site logo with change this code:</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[2]">
+                &lt;div class="logo"&gt;
+                    &lt;a href="index.html"&gt;&lt;img src="assets/images/logo.png" alt="Logo" /&gt;&lt;/a&gt;
+                &lt;/div&gt;
+                </pre>
+                
+                
+                <div id="navigations" class="sub_headding">
+	                <h4>Main Navigation</h4>
+                </div>
+                <p>You can change the main site navigation with change this code:</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[2,3,4]">
+                &lt;ul class="nav navbar-nav"&gt;
+                    &lt;li class="active"&gt;&lt;a href="#header" class="js-target-scroll"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    ....
+                    &lt;li &gt;&lt;a href="#venue" class="js-target-scroll"&gt;Venue&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                </pre>
+                
+                <div id="countdown" class="sub_headding">
+	                <h4>Countdown</h4>
+                </div>
+                <p>You can change the event countdown time with change this code in <strong>(assets/js/interface.js)</strong>:</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[6]">
+                	/*------------------------------------------------------------------
+                        Countdown
+                        -------------------------------------------------------------------*/
+                        
+                    $(function(e) {
+                            var endDate = "march 22, 2017";
+                            $('.countdown.styled').countdown({
+                              date: endDate,
+                              render: function(data) {
+                                $(this.el).html("<div class='countdown-amount'>" + this.leadingZeros(data.days, 2) + " <span class='countdown-period'>Days</span></div><div class='countdown-amount'>" + this.leadingZeros(data.hours, 2) + " <span class='countdown-period'>Hours</span></div><div class='countdown-amount'>" + this.leadingZeros(data.min, 2) + " <span class='countdown-period'>Minutes</span></div><div class='countdown-amount'>" + this.leadingZeros(data.sec, 2) + " <span class='countdown-period'>Seconds</span></div>");
+                              }
+                            });
+                    
+                          });
+                </pre>
+                <div class="info"><p><span class="label label-warning">Note:</span> Change date time automatically set.</div>
+                
+                <div id="sectionheading" class="sub_headding">
+                	<h4>Section Heading</h4>
+                </div>
+                <p>Use this code for section heading.</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[ 2,3,4, 5, 6, 7, 8]">
+                	&lt;!-- Heading --&gt;
+                        &lt;div class="col-md-12"&gt;
+                            &lt;div class="heading-sec"&gt;
+                                &lt;div class="section-header text-center"&gt;
+                                    &lt;h2>Our Speakers&lt;/h2&gt;
+                                    &lt;p>Lorem Ipsum is simply dummy text.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;!-- /Heading --&gt;
+                </pre>
+                
+                
+                <div id="bgcolor" class="sub_headding">
+                	<h4>Section Background Color</h4>
+                </div>
+               
+               <pre class="brush: js; ruler: true; first-line: 1 highlight:[1];">
+                    &lt;section class="primary-bg"&gt;
+                        &lt;div class="container"&gt;	
+                            ......
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                </pre>
+                <div class="info"><p><span class="label label-warning">Note:</span> If you want to red background color in section use <strong>class="primary-bg"</strong>
+                &nbsp;&nbsp;<span style="background:#DE302F; display:inline-block; vertical-align:middle; width:30px; height:20px;"></span>
+                	</p>
+                 </div>
+               <br>
+               
+               <pre class="brush: js; ruler: true; first-line: 1 highlight:[1];">
+                    &lt;section class="secondary-bg"&gt;
+                        &lt;div class="container"&gt;	
+                            ......
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                </pre>
+                <div class="info"><p><span class="label label-warning">Note:</span> If you want to black background color in section use <strong>class="secondary-bg"</strong>
+                &nbsp;&nbsp;<span style="background:#222; display:inline-block; vertical-align:middle; width:30px; height:20px;"></span></p>
+                 </div>
+               <br>
+               
+                <div id="footer_elements" class="sub_headding">
+                	<h4>Footer Elements</h4>
+                </div>
+                <p>In this section you can change your social media links and copyright text with your own name or company.</p>
+                <h5 style="padding:8px; border:#ccc solid 1px;"><strong>Demo 1</strong></h5>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[8, 9, 10,11, 12, 13,17,  27]">
+             &lt;!--Footer--&gt;
+                &lt;footer class="secondary-bg"&gt;
+                    &lt;div class="container"&gt;
+                        &lt;div class="row"&gt;
+                            &lt;div class="col-md-12"&gt;
+                                &lt;div class="footer-social-tab"&gt;
+                                    &lt;ul&gt; 
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-facebook" aria-hidden="true">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-twitter" aria-hidden="true">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-linkedin" aria-hidden="true">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-instagram" aria-hidden="true">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-google-plus" aria-hidden="true">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt; 
+                                        &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-pinterest-p" aria-hidden="true">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt; 
+                                    &lt;/ul>
+                                &lt;/div>
+                                &lt;div class="footer-logo-text"&gt;
+                                    &lt;p>BeEvent&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                  
+                    &lt;div class="copyright fourth-bg"&gt;
+                        &lt;div class="container"&gt;
+                             &lt;div class="row"&gt;
+                                 &lt;div class="col-md-12"&gt;
+                                    &lt;p&gt;Copyright &copy; 2016 &lt;a href="#">BeEvent&lt;/a&gt;. All Rights Reserved&lt;/p&gt;
+                                 &lt;/div&gt;
+                              &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/footer&gt;
+        &lt;!--/Footer--&gt;
+                </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete list of font icons <strong><a href="http://fontawesome.io/icons/" target="_blank">here!</a></strong></p><br>
+
+<h5 style="padding:8px; border:#ccc solid 1px;"><strong>Demo 2</strong></h5>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[7, 12, 13, 14, 15, 16, 21]">
+             <!--Footer-->  
+        <footer class="secondary-bg">
+         	<div class="container">
+            	<div class="row">
+                    
+                    <div class="col-md-4 col-md-push-4 text-center">
+                        <a href="#"><img src="assets/images/logo.png" alt="image"></a>
+                    </div>
+                    
+                    <div class="col-md-4 col-md-push-4">
+                        <ul class="social_links">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4 col-md-pull-8">
+                        <p>&copy; 2016 All Rights Reserved.</p>
+                    </div>
+                
+                </div>
+            </div>
+         </footer>
+         <!--/footer--> 
+                </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete list of font icons <strong><a href="http://fontawesome.io/icons/" target="_blank">here!</a></strong></p>
+                
+                <br>
+                <div id="fontawesome" class="sub_headding">
+                	 <h4>FontAwesome Icon Packs</h4>
+                </div>
+               
+                <p>You can also use built-in icon packs in this template, all icons use CSS Font feature, so you can edit and give color to the icon easily. For referrences to easier you use all icons you can visit <strong><a href="http://fontawesome.io/icons/" target="_blank">here!</a></strong></p>
+				
+                <br>
+
+                <div id="eventbrite" class="heading_padding">
+					<h4>Eventbrite</h4>
+				</div>
+                <p>It's easy to <strong>Eventbrite integration</strong> in your template, you just follow the steps.</p><br />
+				<p><strong>Step:1</strong> Open this Website :  <a href="https://www.eventbrite.com/">https://www.eventbrite.com</a> and creat your account</p>
+                <p><strong>Step:2</strong> After Login Add <strong>Event</strong> & <strong>Event Plan</strong> & <strong>Event Seat Map</strong> and other info.</p>
+                <p><strong>Step:3</strong> Click on <strong>Widgets</strong> (Left Sidebar Menu) </p>
+                <img src="assets/images/widgets.jpg" alt="image" />
+                <br />
+
+                <p><strong>Step:4</strong> Select Widgets </p>
+                <p><strong>Step:5</strong> Generate Widget Code </p>
+                <img src="assets/images/widgets2.jpg" alt="image" />
+                
+                <p><strong>Step:6</strong> Copy Generate Widget Code and paste code in you HTML file.</p>
+                
+                
+                <br>
+                
+                
+                
+                <div id="map" class="heading_padding">
+					<h4>Map Element</h4>
+				</div>
+                <p>Below is some scripts to change the Google Maps settings <strong>(assets/js/interface.js):</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[5,6, 16, 20, 21, 28]">
+                if ($('.js-gmap').length > 0){
+                var map;
+                map = new GMaps({
+                    el: '.js-gmap',
+                    lat: -23.976215,
+                    lng:133.769531,
+                    scrollwheel:false,
+                    zoom: 4,
+                    zoomControl : true,
+                    panControl : false,
+                    streetViewControl : false,
+                    mapTypeControl: false,
+                    overviewMapControl: false,
+                    clickable: false
+                });
+                var image = 'assets/images/map-label.png';
+                var infoWindow = new google.maps.InfoWindow({
+                });
+                map.addMarker({
+                    lat: -23.976215,
+                    lng:133.769531,
+                    icon: image,
+                    animation: google.maps.Animation.DROP,
+                    verticalAlign: 'bottom',
+                    horizontalAlign: 'center',
+                    backgroundColor: '#d3cfcf',
+                    infoWindow:{
+                        content: '<div class="map-info">Your Company Address</div>'
+                    }
+                });
+                map.addStyle({
+                    styledMapName:"Styled Map",
+                    mapTypeId: "map_style"  
+                });
+                map.setStyle("map_style");
+            }
+                </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete documentation <strong><a href="http://hpneo.github.io/gmaps/documentation.html" target="_blank">here!</a></strong></p>
+                	
+				
+                
+                <br>
+                
+                <div id="multi-color" class="heading_padding">
+	                <h3>How to Set the Template Color</h3>
+                </div>
+                <p>It's easy to set the color which you want for your template, you just need to change the below line code:</p>
+                
+                <ol>
+                	<li>Open any template <strong>.html</strong> file which you want to set the color(example <strong>index.html</strong>).</li>
+                    <li>Find below line of code in <strong>&lt;head&gt;</strong> section:
+                    <div>
+                    <pre class="brush: js; ruler: true; first-line: 1;">
+                    	&lt;!-- Custom Colors --&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/red.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/orange.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/blue.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/pink.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/green.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/purple.css">--&gt;
+                    </pre>
+                    </div></li>
+                    <li>SET your favorite color (example: ORANGE) and make HTML comment all the other colors line like this:
+                    <div>
+                    <pre class="brush: js; ruler: true; first-line: 1; highlight:[3]">
+                    	&lt;!-- Custom Colors --&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/red.css">--&gt;
+                        <link rel="stylesheet" href="css/colors/orange.css">
+                        &lt;!--<link rel="stylesheet" href="css/colors/blue.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/pink.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/green.css">--&gt;
+                        &lt;!--<link rel="stylesheet" href="css/colors/purple.css">--&gt;
+                    </pre>
+                    </div></li>
+                    <li>Just Save the template (CTRL+S) and see the result in browser!</li>
+                </ol>	
+                <br>
+				<div id="mail-chimp" class="heading_padding">
+	                <h3>How to Change Mail Chimp Api Key</h3>
+                </div>
+                <p>Below is some php code to change the Mail Chimp <strong>API KEY &amp; List Unique ID</strong> settings <strong>(inc/store-address.php)</strong>:</p>
+                	
+                    <ol>
+                	<li>Open the <strong> store-address.php</strong> file.</li>
+                    <li>Find below highlighted line number 12 and 16 code in <strong>store-address.php</strong> file and change <strong>"API KEY" </strong>and <strong>"List Unique ID"</strong>:
+                    <div>
+                    <pre class="brush: js; ruler: true; first-line: 1; highlight:[12, 16]">
+                    	function storeAddress(){
+	
+                        // Validation
+                        if(!$_GET['email']){ return "No email address provided"; } 
+                    
+                        if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*$/i", $_GET['email'])) {
+                            return "Email address is invalid"; 
+                        }
+                    
+                        require_once('MCAPI.class.php');
+                        // grab an API Key from http://admin.mailchimp.com/account/api/
+                        $api = new MCAPI('your_apikey'); // "API KEY"
+                        
+                        // grab your List's Unique Id by going to http://admin.mailchimp.com/lists/
+                        // Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
+                        $list_id = "my_list_unique_id"; // "List Unique ID"
+                    
+                        if($api->listSubscribe($list_id, $_GET['email'], '') === true) {
+                            // It worked!	
+                            return 'Success! Check your email to confirm sign up.';
+                        }else{
+                            // An error ocurred, return error message	
+                            return 'Error: ' . $api->errorMessage;
+                        }
+                        
+                    }
+
+                    </pre>
+                    </div></li>
+                    
+                </ol>	
+                
+				
+                <br>
+				<div id="paypal" class="heading_padding">
+	                <h3>How to Set Your Paypal Account Detail</h3>
+                </div>
+               		<p>It's Easy to set your Paypal Account detail, please check below instructions:</p>
+                <ol>
+                	<li>Open <strong>paypal/paypal.php</strong> file.</li>
+                    <li>Find the below highlighted line number 7 &amp; 8 code in your <strong>paypal/paypal.php</strong> file and change with your "Order Email" and "Paypal Email". You can also set your Order email same as your PayPal account email.</li>
+               </ol>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[7,8]">
+                       
+                        session_start();
+                        $uri = 'http://' . $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+                        $back_url = explode ("paypal/", $uri);
+                        require_once("library.php");
+                        /* Please change your details*/
+                        $template_name = 'index-paypal.html'; // here add form page name
+                        define('EMAIL_ADD', 'yourorderaccountemail@domainname.com'); // "Order Email"
+                        define('PAYPAL_EMAIL_ADD', 'yourpaypalemail@paypal.com'); // "Paypal Email"
+                        /************************************************/
+                        require_once("paypal_class.php");
+                        $p 				= new paypal_class(); // paypal class
+                        $p->admin_mail 	= EMAIL_ADD; // set notification email
+                        $action 		= $_REQUEST["action"];
+                </pre>
+                <br>
+                
+                 <div id="pricevalue" class="heading_padding">
+	                <h3>How to Change Plan Price values</h3>
+                </div>
+                 <ol>
+                	<li>Open the <strong>paypal/index.php</strong> file.</li>
+                    <li>Find this line of code in <strong>index.php</strong> file and change Plan Price value. </li>
+               </ol>
+               <pre class="brush: js; ruler: true; first-line: 1; highlight:[10,11,12]">
+                        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+                        <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                        <title>BeEvent - Conference & Event HTML Template</title>
+                        </head>
+                        <body>
+                        <div class="wrapper">
+                        <?php 
+                        
+                        $RegularPass="185";
+                        $BusinessPass="220";
+                        $PremiumPass="285";
+                        $fname=$_REQUEST['payer_fname'];
+                        $email=$_REQUEST['payer_email'];
+                        $planName = $_REQUEST['product_name'];
+                        $SeatsQuantity = $_REQUEST['product_quantity'];
+                        if($planName=='RegularPass'):
+                        $price = $RegularPass;
+                        elseif($planName=='BusinessPass'):
+                        $price = $BusinessPass;
+                        elseif($planName=='PremiumPass'):
+                        $price = $PremiumPass;
+                        endif;
+                        ?>
+                </pre>
+                <div id="bgcolor" class="sub_headding" style="padding-top:0px;">
+                	<h4>NOTE: You must set same Price in HTML template file too.</h4>
+                </div>
+                <br>
+                
+                <div id="css" class="heading_padding">
+	                <h3>CSS Structure</h3>
+                </div>
+                <p>I'm using one main CSS file <strong>(assets/css/style.css)</strong>, in this template which you are free to modify depending on the customization you require.  Below are 4 additional CSS files:</p>
+                <ul style="list-style-type:square;">
+                    <li><strong>bootstrap.min.css</strong> - This is a main stylesheet that required for basic template styling like grid, form, input and web elements.</li>
+                    <li><strong>font-awesome.min.css</strong> - CSS stylesheets for font icon packs.</li>
+                    <li><strong>owl.carousel.css </strong> - This stylesheet used for styling the Banner slideshow.</li>
+                    <li><strong>owl.transitions.css</strong> - This stylesheet used for styling the Banner transitions.</li>
+
+                </ul>
+                <p>The main CSS file <strong>(assets/css/style.css)</strong> contains all of the specific stylings for the page. The file was divided into several sessions as below:</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                /*===========================
+                      Table of Css
+                     
+                        1. General code
+                            1.1. Typography
+                            1.2. Button
+                            1.3. Space margins and padding
+                            1.4. Form
+                            1.5. Section-background-color & sectino-heading
+                            1.6. Overlay-color
+                            1.7. parallex-background
+                            1.8. Tab & Accordion
+                        
+                        2. Header
+                            2.1. Header Fixed top
+                            2.2. Navigation
+                        
+                        3. Banner
+                        4. Timer CountDown 
+                        5. About Us Section
+                        6. our-conference info
+                        7. Event Gallery
+                        8. Conference Schedule
+                        9. Our Speakers
+                        10. Priceing
+                        11. Testimonial
+                        12. FAQ
+                        13. Sponsors
+                        14. Venue
+                        15. Footer
+                        16. Back to top
+                        17. Responsive CSS
+                                                                         
+                    ===========================*/
+                
+                CSS styles for support all kinds of different screen sizes
+                </pre>
+                <p>If you would like to edit a specific section of the site, simply find the appropriate label in the <strong>.css</strong> file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+                
+                <br>
+                
+                <div id="scripts" class="heading_padding">
+	                <h3>Scripts</h3>
+                </div>
+                <p>This theme uses several scripts many of which are documented within the theme's code. If you're a developer, you will find this particularly useful.</p>
+                <ul class="nav-list nav-list-custom">
+                    <li><a href="http://jquery.com/" target="_blank"><i class="fa fa-chevron-right"></i> jQuery v1.11.3</a></li>
+                    <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-chevron-right"></i> Bootstrap JS</a></li>
+					<li><a href="https://github.com/rendro/countdown" target="_blank"><i class="fa fa-chevron-right"></i>Countdown JS</a></li>
+                    <li><a href="http://hpneo.github.io/gmaps/" target="_blank"><i class="fa fa-chevron-right"></i> GMaps</a></li>
+                    <li><a href="https://jqueryvalidation.org/" target="_blank"><i class="fa fa-chevron-right"></i> jquery.validate.min.js</a></li>    
+                    <li><a href="http://owlgraphic.com/owlcarousel/" target="_blank"><i class="fa fa-chevron-right"></i> owl.carousel.min.js</a></li>    
+                </ul>
+                
+                
+                <br>
+                <div class="heading_padding">
+	                <h3 id="php">PHP Integration</h3>
+                </div>
+                <p>This template use the PHP engine for <strong>Registration</strong></p>
+                
+                <h5 style="padding:8px; border:#ccc solid 1px;"><strong>Registration form</strong></h5>
+                <p>Edit your email address in <strong>mail.php</strong> file.</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                $to="contact@exampleurl.com"; // Change with your email address
+                </pre>
+                <br>
+                
+                <br>
+                <div id="image" class="heading_padding">
+	                <h3>Image Files</h3>
+                </div>
+                <ul class="nav-list nav-list-custom">
+                    <li><a href="https://pixabay.com/" target="_blank"><i class="fa fa-chevron-right"></i> Pixabay</a></li>
+                    <li><a href="http://www.freepik.com/" target="_blank"><i class="fa fa-chevron-right"></i> Freepik</a></li>
+                </ul>
+                
+                <br>
+                <div id="credits" class="heading_padding">
+	                <h3>Credits</h3>
+                </div>
+    
+                <ul class="nav-list nav-list-custom">
+                    <li><a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-chevron-right"></i> Twitter Bootstrap</a></li>
+                    <li><a href="http://fontawesome.io/" target="_blank"><i class="fa fa-chevron-right"></i> Font Awesome</a></li>
+                    <li><a href="https://www.google.com/fonts" target="_blank"><i class="fa fa-chevron-right"></i> Google WebFonts</a></li>
+                </ul>
+                
+                <br><br>
+                 
+                
+            </div>
+        </div>
+	</div>
+    
+    <footer id="footer"><br>
+    	<div class="container">Copyright © 2016 BeEvent. All rights reserved.</div>
+    </footer>
+   
+    
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> 
+    <script src="assets/js/shCore.js"></script> 
+    <script src="assets/js/shBrushJScript.js"></script> 
+	<script src="assets/js/script.js"></script> 
+    
+</body>
+
+</html>

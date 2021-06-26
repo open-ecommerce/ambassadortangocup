@@ -1,0 +1,27 @@
+[09-Nov-2020 12:52:08 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[09-Nov-2020 12:52:08 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 25
+[09-Nov-2020 12:52:26 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (2) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:45:35 UTC] PHP Notice:  Undefined variable: conn in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:45:35 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:45:40 UTC] PHP Notice:  Undefined variable: conn in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:45:40 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:50:05 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:50:05 UTC] PHP Notice:  Undefined variable: sql in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:50:05 UTC] PHP Warning:  mysqli::query(): Empty query in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:50:23 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:18 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:22 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:25 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:27 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:30 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:31 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (2) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:51:40 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:53:07 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:54:02 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:54:17 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7
+[11-Nov-2020 07:54:17 UTC] PHP Notice:  Undefined variable: sql in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:54:17 UTC] PHP Warning:  mysqli::query(): Empty query in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/paypal.php on line 28
+[11-Nov-2020 07:54:37 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host '182.50.133.86:3306' (0) in /home/webmaster2184/public_html/testing/wmd-theme/lp/event/demo-2/paypal/library.php on line 7

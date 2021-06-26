@@ -1,0 +1,450 @@
+[08/13/2015 1:35 PM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=20.00 
+invoice=1320103588 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=2866 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=06:35:44 Aug 13, 2015 PDT 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=0.88 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=ARoXFbv.voH8EPxrw5258771fARWAkdbP37yq2FS9cxKKZSVEuTP0VW7 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=4UK694962A008984F 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=---Select Service --- 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=0.88 
+quantity1=1 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=20.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=20.00 
+ipn_track_id=59ee2d0158978 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Thu, 13 Aug 2015 13:35:48 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ZAPQUIc-wbZpA5yBpbSbzqNeHyxniLD59M1NzPgQK-AdHbIAAt3bt99H-aERuVcduazzvr3HkZEjBBefLsHq2sbyxx8giynexI30-TbgX5LEwrfbpNH-kmi5bh3LR8TwYo5LKEjOEfIOrV9g1ciO-4ZsAP4VaPXv3X0KK4oOnPNRkbizD3rzJRmYx-g9zxXH3bnzQbLRnfstAAeK06QtlQv4dGSC9xLEnZa-mpil8zY6aTFFME4M5_4Q8oqfpjy8wDy6s2syqyUInbgwSW_uHUWudhcw_UiFxbJrTVHV8i0IPM5KUhEweK5pD3g8dEyG6TOO4l_Cfznk1kHWrsReg5AofrBHso6TBAisk_lImA2LsugaIHso5GJFOurinA1IDZvEAnqhgF3fNCfY0QsPcBS5AqPv557WeiTzeSjBv7ysV0vN_YJQxmrhY3u; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 10-Aug-2025 13:35:49 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 12-Aug-2020 13:35:49 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1439472948786368; path=/; expires=Sat, 05-Aug-45 13:35:48 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: 7ac4ed65bbe88
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D882756693; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1439472948769371; path=/; expires=Sat, 05-Aug-45 13:35:48 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[11/10/2020 3:07 PM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=99.00 
+invoice=1104049377 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=25527 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=03:05:15 Nov 10, 2020 PST 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=3.17 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=ALKy1VlP4TTkO-p7z.xyaShsSLyKAxrCC66NaSZ1skbtbGXbD.v7V3j. 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=1VP69119GR103430W 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=FrontSeat 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=3.17 
+quantity1=1 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=99.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=99.00 
+ipn_track_id=c5a898259b619 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Thu, 10 Nov 2020 15:06:59 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=UiDGjmA4JoA0OyYL6VXQj4RFBQKE2JejI9qjWbOvTPyUJPfpbhaPaEby-P9zQ3vGZYVyNN2amyuWAscsy3YWJTpKJPbbvPeZtq1bTLwdE58F5QewtiwGQpq44rMWI-alwmcsymNqqNR8ASnd4zojY4aek-1b3jvGu1J95b6b3UWYZ2YDAWqsCBf7aA0MoW7-R8gl7vB8WjeIuBOP2K1cVXFnz41rPMDgYReIF6zuySLVuK0F5XQdGai-JNwQ-r-tgnhShoJ-DG3a30zXstmYyJA6ZLVa4d4ZmaRe1COpLRLo2MXlYXg-QFrf2Gj1AXXg40v7vkOQv8b3vw8e_lkcn4NmISZUfUgq5Hx72ykvf9L4WFQTCh1n-WXB7Np_nIBI6F56j3K36qYY-3UxfcUw_hSUUCmW-1uiM0wq8CqHStpLS_-P7QxX2np2uSG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 08-Nov-2026 15:07:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 10-Nov-2018 15:07:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1478790419837775; path=/; expires=Sat, 03-Nov-46 15:06:59 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 72f6887cc7e35
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D328016984%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 10 Nov 2020 15:37:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[11/11/2020 4:05 AM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=297.00 
+invoice=1058083380 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=61601 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=02:58:48 Nov 10, 2020 PST 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=8.91 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=AFFIASYBPB4TY3B2VIHX1thDFvcyAEJRJO3z9vfzCqk8.ncJoMQx8fdD 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=68669706FW094972C 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=FrontSeat 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=8.91 
+quantity1=3 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=297.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=297.00 
+ipn_track_id=9eb4b1ff9e1c 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Fri, 11 Nov 2020 04:05:08 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=wbKqyIqEMjbEOzSIStHfh4m9VcdVeMnftwXIgJQFDdJE-TQTRYWyM6uqFEPjCYS4HrV9Vcs7CheSV21_uDkAli3GKE5yKRZOjuYR6WLM4wnUU9KnFU2PzrGyEl1Z7SF-BDm339D02jLisJBFZDeIe8_Z37tYA5lYFrqWgh_eJH0RNl04sga6a0qcnKRLgoobWQHq7mOPRxXyDMeo-VeK4Vfx2c22bPMMcG6Hp64Ksv9MDFwRF-rwvhrYjqCwisQncKjCeTuOnq44ewLQpM9R734Ir_5ktSgHlO6bcC0PWJez8hSolt6RmbB-8g8W8kDAAj4TSFMGVziDCXk1M3toVG9j9Iqxza1bgJ6PpZbNHNGDPYIXZydsk-FOJ4UQHJ5HIbcAbjYTS_7xOhEi_UGyQJMBQRzARYI6Kk_Mn8zLhF2SHdEbzLjEVufmEQS; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 09-Nov-2026 04:05:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 11-Nov-2018 04:05:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1478837108759543; path=/; expires=Sun, 04-Nov-46 04:05:08 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 214172efb514b
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1950557528%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 11 Nov 2020 04:35:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[11/11/2020 4:27 AM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=398.00 
+invoice=1342359147 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=85478 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=05:43:04 Nov 10, 2020 PST 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=11.84 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=AdTMsxE7AMEBXH6XGnoaYeZvMyu3AOuUYWgUtKemL22SSHz8nQHWa.2H 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=5YA959091D897290K 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=MiddleSeat 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=11.84 
+quantity1=2 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=398.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=398.00 
+ipn_track_id=a42c8271cce5f 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Fri, 11 Nov 2020 04:27:27 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ZSZ7YeWZu3XDnUl5NN1MopSTQ9mwVrq497uynbIcxy16wd4pq9txFFSOouDH78tRap3tYd-FmVC0dCYciNLmxTgTn3gNTe1VRpq7W-6t-hSG3RgV22vIxFxXWIgJffASmb3Iqzlbxk0LrKBTZZ8x5rAgOGCbroizCwSiC6gTV8zGbdHmtM49y5fk-MxD-gdDj28C6ZxcyixZAPL6r6gSs646TZr5v9sq9Fb4geW0qI6O2O5zSO7Lb6qtVKEvHdHc2iN9eziA3mmEzmjqo0SS-2GrzFCopHUVBFdRrjYQ-lnsY8trrYC0_3kVyRQuxDucCZ_lzwZXITCrrDYXFLoaoUEb7BcrfQWnZGTiQS-e5fRddBIRsptSkG0b93yYRe2T69v9fewyXGp5hLsjUBG-GfU0PnRtcBhzS7pi1lXTFXhVNtcDZJze2ehGGva; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 09-Nov-2026 04:27:27 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 11-Nov-2018 04:27:27 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1478838447125757; path=/; expires=Sun, 04-Nov-46 04:27:27 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: c3c54eaf1a3a0
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2940740952%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 11 Nov 2020 04:57:27 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[11/11/2020 6:25 AM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=99.00 
+invoice=1122077873 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=41490 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=03:22:33 Nov 10, 2020 PST 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=3.17 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=A8RQ0F8gkUzMctcqZ4r9aZzwD7JUAqKApbd.FsBiR928VNI60wBWgXPJ 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=9CR3910328058862N 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=FrontSeat 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=3.17 
+quantity1=1 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=99.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=99.00 
+ipn_track_id=9433d7cbf0a87 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Fri, 11 Nov 2020 06:25:03 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=yf-soR0oWiFVY3eVrmUnpUuIIl-UvF0GFf9_BEtSgRxeLqC48u0XXmAuxukWVGVZwNeHVIGPZ0Fk3n5mOqUMWQnUi420rSaybaYT-6_2fK1VmZTxdFzEGBBfX5P4a2sON86BLy4tt4qTtX6I7WmCxDgNAOw-j21zqY3-A5wBwiuvbUNc11qly2bfVvc0-IXk3l98m2GPhhwf5BNes_z56wvykJZt5CQpjkV8mmqq_7RzyFz3K8ho5Bz_6lsLyOe_YWKrU9OcGA9qE_TRb1P3EaG16tu5ci4DCgFeDbUrF3sjN0H1_YtasaHc55Q-XCVCWvzrDnoVq3nmd2C1hj8U3kpMXR8La2odvCXw2DHYd6LaUJKaI2yAWDLvuwlC5LXUeG7feQW9UmsTRn4UKTnqD6hw5w-0fWhL5r4pUbLd39JLcBv4hcCr0o3JQfG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 09-Nov-2026 06:25:03 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 11-Nov-2018 06:25:03 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1478845503387391; path=/; expires=Sun, 04-Nov-46 06:25:03 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 9df55eb75a64a
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1063527768%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 11 Nov 2020 06:55:03 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
+[11/11/2020 8:48 AM] - SUCCESS:IPN VERIFIED!
+[From:ipn.sandbox.paypal.com|173.0.82.126]IPN POST Vars Received By Paypal_IPN Response API:
+mc_gross=99.00 
+invoice=1138114645 
+protection_eligibility=Eligible 
+address_status=confirmed 
+item_number1=7192 
+payer_id=GYANM9Q6BUBNU 
+tax=0.00 
+address_street=1 Main St 
+payment_date=03:40:27 Nov 10, 2020 PST 
+payment_status=Completed 
+charset=windows-1252 
+address_zip=95131 
+mc_shipping=0.00 
+mc_handling=0.00 
+first_name=Test 
+mc_fee=3.17 
+address_country_code=US 
+address_name=Test Buyer 
+notify_version=3.8 
+custom= 
+payer_status=verified 
+business=devraj@webmasterdriver.net 
+address_country=United States 
+num_cart_items=1 
+mc_handling1=0.00 
+address_city=San Jose 
+verify_sign=AhEqPBa2LPCE3sKdenmfssNtAsh0ALpgDvTzbKUh-Bq-UvGUEGV2kb8f 
+payer_email=devraj-buyer@webmasterdriver.net 
+mc_shipping1=0.00 
+tax1=0.00 
+txn_id=9FK57145G0443184Y 
+payment_type=instant 
+last_name=Buyer 
+address_state=CA 
+item_name1=FrontSeat 
+receiver_email=devraj@webmasterdriver.net 
+payment_fee=3.17 
+quantity1=1 
+receiver_id=NZVTZSTRZ7Z62 
+txn_type=cart 
+mc_gross_1=99.00 
+mc_currency=USD 
+residence_country=US 
+test_ipn=1 
+transaction_subject= 
+payment_gross=99.00 
+ipn_track_id=2bca7f16b6cfc 
+IPN Response from Paypal Server:
+HTTP/1.1 200 OK
+Date: Fri, 11 Nov 2020 08:48:03 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=f_hrgMFBnNsnpqq6RcNykoqCCGOvlB7Q9M92HvdvW81y4a0HFKuUvt3fbLljhC3iJDzm4S-xcz7sX1PObhfP5y9CkEDYbCLvD2g_jstP4OfdBCKhrZIIbO2VD0QDvWj860OA-vLvvJJnRaN2mvFuGz-n1qPbnc__xPrFbx0DeZgxnyooERv60NvNcEPjxCQsRcJxJeyb2ReaYyZ3tSl467j0aZQ8MLmRuBMOaj1YD6XHZOxisVXdHmNf9gAqaXxDJamupCQkhAUfU2fg1vvD_TsalNXXiFRjbGo0PEWeX6oLlZcgLxn9rVqARVAyFXiymUOWYTv9jsAeuGeMmes93sX5ZSW66WLn2Pgr888UQoTUZtDMPqbXLwmfUVLCzlDW-VWqfVcN5adIKLFToHIJFPm_B-6Tncs1sjFTaRWgxnclKvEi2qgoTX7CTtW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 09-Nov-2026 08:48:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 11-Nov-2018 08:48:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1478854084042968; path=/; expires=Sun, 04-Nov-46 08:48:04 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 94e847dd571b
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3297060184%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 11 Nov 2020 09:18:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+8
+VERIFIED
+0
+
+
+
