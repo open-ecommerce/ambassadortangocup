@@ -58,7 +58,7 @@ Timer
 Countdown
 -------------------------------------------------------------------*/
  
-	var endDate = "December 22, 2020";
+	var endDate = "August 21, 2021";
 	$('.countdown.styled').countdown({
 	  date: endDate,
 	  render: function(data) {
