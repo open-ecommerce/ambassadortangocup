@@ -1259,7 +1259,7 @@ small {
 	12. FAQ
 =======================*/
 #faq {
-	background-image:url(../images/1920x1200.jpg);	
+	background-image:url(../images/dancing-2.jpg);
 }
 .faq_group {
 	margin:0 auto;
@@ -1299,7 +1299,7 @@ small {
 =======================*/
 
 #venue {
-	background-image:url(../images/1920x1200.jpg);	
+	background-image:url(../images/venues.jpg);
 }
 .venue_info_box {
   border: 1px solid #de2f2f;
@@ -2047,6 +2047,12 @@ label.error.wobble-error:after {
 /*=========================
 	Sponsors Styles
 ===============================*/
+div#patrons img {
+	max-height: 204px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 #sponsors_table {
 	clear:both;
 	position:relative;
