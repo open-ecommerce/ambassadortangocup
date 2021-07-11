@@ -656,9 +656,14 @@ ul.nav.navbar-nav li.active .dropdown-menu a:hover, .dropdown-menu a:hover {
 #banner {
 	background-image:url(../images/top-banner-residence.jpg);
 }
-.banner-content h1 {
-	font-size: 90px;
+.banner-content h5 {
 	color:#fff;
+	line-height: 39px;
+}
+.banner-content h1 {
+	font-size: 70px;
+	color:#fff;
+	margin-bottom: 35px;
 }
 .banner-fixed {
   display: block;
@@ -2394,7 +2399,7 @@ h4 {
   text-align: center;
 }
 .banner-content h1 {
-	font-size: 56px;
+	font-size: 26px;
 }
 .banner-form {
 	margin-bottom: 50px;
@@ -2916,7 +2921,7 @@ ul li, ol li {
   font-size: 17px;
 }
 .banner-content h1 {
-  font-size: 52px;
+  font-size: 42px;
 }
 .banner-tagline p {
   font-size: 20px;
@@ -3116,7 +3121,7 @@ footer {
   padding-top: 150px;
 }
 .banner-content h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 .nav > li {
   padding: 0 12px;
