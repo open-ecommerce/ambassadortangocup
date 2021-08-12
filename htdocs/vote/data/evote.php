@@ -410,14 +410,14 @@ class Evote {
     public function newCodes($codes){
         $conn = $this->connect();
 
-        $sql = "INSERT INTO elections_codes (code, active) VALUES ";
+        $sql = "INSERT INTO elections_codes (code, code_raw, active) VALUES ";
         $count = 0;
         foreach($codes as $c){
             $hash = crypt($c, "duvetvad");
             if($count == 0){
-                $sql .= "(\"$hash\", NULL)";
+                $sql .= "(\"$hash\",\"$c\", NULL)";
             }else{
-                $sql .= ", (\"$hash\", NULL)";
+                $sql .= ", (\"$hash\",\"$c\", NULL)";
             }
             $count++;
             //$sql .= "INSERT INTO elections_codes (code, active) VALUES (\"$hash\", NULL);";
@@ -455,7 +455,7 @@ class Evote {
         if($r->num_rows > 0){
             while($row = $r->fetch_assoc()){
                 $personal_code_ok = TRUE;
-                $personal_code = $row["code"];
+                $personal_code = $row["code_raw"];
                 $isNewMail = FALSE;
             }
         } else {
@@ -466,7 +466,7 @@ class Evote {
             if($r1->num_rows > 0){
                 while($row = $r1->fetch_assoc()){
                     $personal_code_ok = TRUE;
-                    $personal_code = $row["code"];
+                    $personal_code = $row["code_raw"];
                 }
             }
         }
