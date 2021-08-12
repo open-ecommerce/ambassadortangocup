@@ -19,8 +19,8 @@ if (!$evote->ongoingSession()) {
                 <?php
                 $max = $evote->getMaxAlternatives();
                 echo "<div name=\"maxalt_header\" >";
-                echo "<div id=\"get-code-info\">You need a personal code to vote, you can get yours here: <a href=\"https://vote.ambassadortangocup.com/getcode\">Get my code</a></div>";
-                echo "<div id=\"vote-info\">(Choose your favorite couple)</div>";
+                echo "<div id=\"get-code-info\">You need a personal code to vote,<br> to get yours <a href=\"https://vote.ambassadortangocup.com/getcode\">Click here</a></div>";
+                echo "<div id=\"vote-info\">Choose your favorite couple</div>";
                 echo "</div>";
                 ?>
                 <form action="actions/votingpagehandler.php" method="POST" autocomplete="off">
