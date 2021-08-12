@@ -493,7 +493,7 @@ class Evote {
         $headers .= 'From: <votes@ambassadortangocup.com>' . "\r\n";
         mail($to, $subject, $message, $headers);
         if ($isNewMail) {
-            $sql1 = "UPDATE elections_codes SET email='" . $email . "' WHERE code = '" . $personal_code . "'";
+            $sql1 = "UPDATE elections_codes SET email='" . $email . "' WHERE code_raw = '" . $personal_code . "'";
             $conn->multi_query($sql1);
             echo $conn->error;
         }
