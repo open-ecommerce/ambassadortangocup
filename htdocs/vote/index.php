@@ -127,7 +127,7 @@ if(isset($nav[1])){
 <?php
     $configured = file_exists('data/config.php');
     if(!$configured){
-        echo '<h4>E-vote måste konfigureras</h4>';
+        echo '<h4>Check configuration</h4>';
     }elseif($module == 'vote'){
         include 'index/vote/front.php';
     }elseif($module == 'login'){

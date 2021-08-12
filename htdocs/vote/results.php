@@ -30,7 +30,7 @@ require 'data/Dialogue.php';
             <div class="well small-centered"">
 
                 <div class="logo">
-                    <img id="logo-header" src="/tango-vote-logo.jpg" />
+                    <img id="logo-header" src="tango-vote-logo.png" />
                 </div>
 
                 <div name="maxalt_header" ><div id="vote-info"><img src="images/cup-winner.png" alt="winner" style="height:150px;"></div></div>                <form action="actions/votingpagehandler.php" method="POST" autocomplete="off">
