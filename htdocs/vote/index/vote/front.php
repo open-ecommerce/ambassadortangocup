@@ -72,7 +72,8 @@ if (!$evote->ongoingSession()) {
 
                     </script>
                     <div class="vote-code">
-                        <label >Your secret voting code <a href=\"https://vote.ambassadortangocup.com/getcode\">(get your code here)</a>:</label>
+                        <label >Your secret voting code:</label>
+                        <p><a href="https://vote.ambassadortangocup.com/getcode">Get your code here</a></p>
                         <input type="password" class="form-control" name="code1">
                         <input type="hidden" class="form-control" name="code2" value="1234">
                     </div>
