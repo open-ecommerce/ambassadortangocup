@@ -449,7 +449,7 @@ class Evote {
 
     public function sendVotingCode($email, $votername){
         $conn = $this->connect();
-        $sql1 = "SELECT code FROM elections_codes WHERE email = $email";
+        $sql1 = "SELECT code_raw FROM elections_codes WHERE email = $email";
         $r = $conn->query($sql);
         $isNewMail = TRUE;
         if($r->num_rows > 0){
@@ -459,7 +459,7 @@ class Evote {
                 $isNewMail = FALSE;
             }
         } else {
-            $sql1 = "SELECT code FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
+            $sql1 = "SELECT code_raw FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
             $personal_code=0;
             $r1 = $conn->query($sql1);
             $personal_code_ok = FALSE;
