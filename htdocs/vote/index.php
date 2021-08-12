@@ -6,10 +6,10 @@
     <title>AIR EUROPA TANGO CHAMPIONS 2017</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/evote.css?version=3" rel="stylesheet" type="text/css"/>
 </head>
 
@@ -18,7 +18,7 @@
 header('Content-Type: text/html; charset=utf-8');
 session_start();
 
-include $_SERVER['DOCUMENT_ROOT'].'/data/evote.php';
+include 'data/evote.php';
 require 'index/classes/TableGenerator.php';
 require 'index/classes/MenuGenerator.php';
 require 'data/RandomInfo.php';
@@ -36,7 +36,6 @@ if(isset($_SESSION['message']) && is_string($_SESSION['message']) && $_SESSION['
     unset($_SESSION['message']);
 }
 
-
 $page = trim($_SERVER['REQUEST_URI'], '/');
 $tr = trim($_SERVER['REQUEST_URI'], '/');
 $nav = explode('/',$tr);
@@ -49,8 +48,6 @@ if(isset($nav[0])){
 if(isset($nav[1])){
     $page = $nav[1];
 }
-
-
 
 ?>
     <!-- Header -->
@@ -94,10 +91,8 @@ if(isset($nav[1])){
 
     <!-- Sidebar -->
     <div class="container-fluid">
-
         <div class="col-sm-3 sidebar navbar-collapse collapse col-md-2">
             <ul class="nav nav-sidebar">
-
                 <?php
                 if (true) {
                     echo "<li><a href=\"/vote\">Voting Page</a></li>";
@@ -118,29 +113,19 @@ if(isset($nav[1])){
                     }
                     #echo "<li class=\"nav-header disabled\"><a><hr class=sidebarruler></a></li>";
                 }
-
                 ?>
-
-
-
             </ul>
         </div>
     </div>
-
-
     <!-- Main content -->
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
     <?php else: ?>
         </div>
         <!-- Main content for voting -->
         <div class="col-lg-12 voting centered">
     <?php endif; ?>
-
-
 <?php
-
-    $configured = file_exists($_SERVER['DOCUMENT_ROOT'].'/data/config.php');
+    $configured = file_exists('/data/config.php');
     if(!$configured){
         echo '<h4>E-vote måste konfigureras</h4>';
     }elseif($module == 'vote'){
@@ -208,16 +193,11 @@ if(isset($nav[1])){
     }else{
         include 'index/vote/front.php';
     }
-
 ?>
-
     </div>
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>

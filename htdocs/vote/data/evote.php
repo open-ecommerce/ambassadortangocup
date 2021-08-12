@@ -1,10 +1,9 @@
 <?php
 //require __DIR__."/slask.php";
-include $_SERVER['DOCUMENT_ROOT']."/data/config.php";
+include "/data/config.php";
 //crypt($pass, '$6$'.$salt.'$');
 //crypt($pass, $hash) == $hash;
 class Evote {
-
     private function connect(){
 	$conn = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_DB);
         if ($conn->connect_error) {
@@ -12,7 +11,6 @@ class Evote {
         }
         return $conn;
     }
-
     private function generateSalt($length){
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
@@ -34,7 +32,6 @@ class Evote {
         }
 	    return FALSE;
     }
-
     public function ongoingRound(){
         $conn = $this->connect();
         $sql =  "SELECT active FROM elections WHERE (active=1)";
@@ -45,7 +42,6 @@ class Evote {
         }
 	    return FALSE;
     }
-
     public function countRounds(){
         $conn = $this->connect();
         $sql =  "SELECT COUNT(id) FROM elections";
@@ -98,12 +94,8 @@ class Evote {
                 }
             }
         }
-
         return TRUE;
-
     }
-
-
     public function getMyTotalVotes(){
         $conn = $this->connect();
         $sql =  "select sum(votes) as total from votes";
@@ -115,7 +107,6 @@ class Evote {
         $conn->close();
         return $count;
     }
-
     public function getAllSessions(){
         $conn = $this->connect();
         $sql = "SELECT * FROM sessions ORDER BY id DESC;";
@@ -316,9 +307,7 @@ class Evote {
         $res = $conn->query($sql);
         echo $conn->error;
         $conn->close();
-
         return $res;
-
     }
 
     public function getResult(){
@@ -453,6 +442,19 @@ class Evote {
         $conn->close();
 
     }
+
+    public function getVotingCode(){
+        $conn = $this->connect();
+        $sql = "SELECT elections_alternatives.id AS id, elections_alternatives.name AS name, elections.name AS e_name FROM elections_alternatives
+            LEFT JOIN elections ON (elections_alternatives.election_id = elections.id)
+            WHERE (elections.active = 1)
+            ORDER BY name";
+        $res = $conn->query($sql);
+        echo $conn->error;
+        $conn->close();
+        return $res;
+    }
+
 
     public function checkCheating(){
         $conn = $this->connect();
