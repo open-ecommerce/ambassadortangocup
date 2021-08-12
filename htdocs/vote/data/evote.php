@@ -240,7 +240,6 @@ class Evote {
             }
         }
 
-
         // lägg in i databasen
         //if(($personal_code === "imparcial")||($personal_code_ok && $current_code_ok && $this->checkRightElection($options))){
         if(($personal_code === "imparcial")||($personal_code_ok )){
@@ -443,19 +442,38 @@ class Evote {
 
     }
 
-    public function getVotingCode(){
+    public function getVotingCode($email){
         $conn = $this->connect();
-        $sql = "SELECT elections_alternatives.id AS id, elections_alternatives.name AS name, elections.name AS e_name FROM elections_alternatives
-            LEFT JOIN elections ON (elections_alternatives.election_id = elections.id)
-            WHERE (elections.active = 1)
-            ORDER BY name";
-        $res = $conn->query($sql);
-        echo $conn->error;
-        $conn->close();
-        return $res;
+        $hash = crypt($personal_code, "duvetvad");
+        $sql2 = "SELECT id FROM elections_codes WHERE (code=\"$hash\" AND active IS NULL)";
+        $r2 = $conn->query($sql2);
+        $personal_code_ok = FALSE;
+        $id = -1;
+        if($r2->num_rows > 0){
+            while($row = $r2->fetch_assoc()){
+                $personal_code_ok = TRUE;
+                $id = $row["id"];
+            }
+        }
+        $to = $email;
+        $subject = "Your personal code to vote";
+
+        $message = 'Dear Tanguer@,<br>';
+        $message .= "your personal code for vote is: 666 <br><br>";
+        $message .= "Regards,<br>";
+
+// Always set content-type when sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+        $headers .= 'From: <enquiry@example.com>' . "\r\n";
+        $headers .= 'Cc: myboss@example.com' . "\r\n";
+
+        mail($to, $subject, $message, $headers);
+
+
     }
-
-
     public function checkCheating(){
         $conn = $this->connect();
 
