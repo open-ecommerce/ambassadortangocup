@@ -472,7 +472,7 @@ class Evote {
         }
 
         $to = $email;
-        $subject = "Your personal code to vote for the Argentinean Ambassador Tango Cup 2021";
+        $subject = "Your personal code to vote is: " . $personal_code;
         $message = "
         <html>
         <head>
