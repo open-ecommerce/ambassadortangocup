@@ -5,9 +5,10 @@ require '../data/Dialogue.php';
 $evote = new Evote();
 session_start();
 if (isset($_POST['button'])) {
-    if ($_POST['button'] == 'vote') {
+    if ($_POST['button'] == 'getcode') {
         $dialogue = new dialogue();
         $ok = true;
+        echo "viva peron";
         $ongoingR = $evote->ongoingRound();
         if (!isset($_POST['email'])) {
             $ok = false;
