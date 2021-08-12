@@ -1,6 +1,6 @@
 <?php
 //require __DIR__."/slask.php";
-include "data/config.php";
+include "/home2/atc/ZV056YHV/htdocs/vote/data/config.php";
 //crypt($pass, '$6$'.$salt.'$');
 //crypt($pass, $hash) == $hash;
 class Evote {
