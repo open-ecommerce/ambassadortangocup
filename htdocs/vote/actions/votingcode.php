@@ -21,18 +21,14 @@ if (isset($_POST['button'])) {
         }
         if ($ok) {
             $email = $_POST['email'];
-
-            if ($evote->sendVotingCode($email)) {
+            $votername = $_POST['votername'];
+            if ($evote->sendVotingCode($email, $votername)) {
                 $dialogue->appendMessage('Your code has being sent to your email', 'success');
             } else {
                 $dialogue->appendMessage('Problems to send the code. This could be because you entered an invalid email', 'error');
             }
-            echo "is ok";
-        } else {
-            echo "is not ok";
         }
-
-//        $_SESSION['message'] = serialize($dialogue);
-//        header('Location: index');
+        $_SESSION['message'] = serialize($dialogue);
+        header('Location: index');
     }
 }

@@ -16,6 +16,8 @@ if (!$evote->ongoingSession()) {
                 </div>
                 <form action="actions/votingcode.php" method="POST" autocomplete="off">
                     <div class="vote-code">
+                        <label >Enter your name:</label>
+                        <input type="text" class="form-control" name="votername">
                         <label >Enter your email to get a code to vote:</label>
                         <input type="email" class="form-control" name="email">
                     </div>

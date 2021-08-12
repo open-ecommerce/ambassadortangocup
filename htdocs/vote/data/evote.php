@@ -447,7 +447,7 @@ class Evote {
         $conn->close();
     }
 
-    public function sendVotingCode($email){
+    public function sendVotingCode($email, $votername){
         $conn = $this->connect();
         $sql1 = "SELECT code FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
         $personal_code=0;
@@ -460,24 +460,23 @@ class Evote {
             }
         }
         $to = $email;
-        $subject = "Your personal code to vote";
+        $subject = "Your personal code to vote for the Argentinean Ambassador Tango Cup 2021";
 
-        $message = 'Dear Tanguer@,<br>';
-        $message .= "your personal code for vote is:".$personal_code. "<br><br>";
-        $message .= "Regards,<br>";
+        $message = 'Dear '.$votername.':';
+        $message .= "Thank you for participating in the Argentinean Ambassador Tango Cup 2021." . PHP_EOL;
+        $message .= "Your personal code for vote is:".$personal_code . PHP_EOL;
+        $message .= "You can use this code to vote at: https://vote.ambassadortangocup.com" . PHP_EOL;
+        $message .= "Happy tango";
 
-// Always set content-type when sending HTML email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-// More headers
         $headers .= 'From: <enquiry@example.com>' . "\r\n";
         $headers .= 'Cc: myboss@example.com' . "\r\n";
 
         mail($to, $subject, $message, $headers);
 
         $sql1 = "UPDATE elections_codes SET email='".$email."' WHERE code = '".$personal_code."'";
-        echo "br".$sql1."br";
 
         $conn->multi_query($sql1);
         echo $conn->error;
