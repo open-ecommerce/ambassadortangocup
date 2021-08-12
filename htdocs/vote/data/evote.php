@@ -462,17 +462,31 @@ class Evote {
         $to = $email;
         $subject = "Your personal code to vote for the Argentinean Ambassador Tango Cup 2021";
 
-        $message = 'Dear '.$votername.':';
-        $message .= "Thank you for participating in the Argentinean Ambassador Tango Cup 2021." . PHP_EOL;
-        $message .= "Your personal code for vote is:".$personal_code . PHP_EOL;
-        $message .= "You can use this code to vote at: https://vote.ambassadortangocup.com" . PHP_EOL;
-        $message .= "Happy tango";
+//        $message = 'Dear '.$votername.': \r\n';
+//        $message .= "Thank you for participating in the Argentinean Ambassador Tango Cup 2021. \r\n";
+//        $message .= "Your personal code for voting is:".$personal_code . "\r\n";
+//        $message .= "You can use this code to vote at: https://vote.ambassadortangocup.com \r\n";
+//        $message .= "All the best";
+
+        $message = "
+        <html>
+        <head>
+        <title>Your personal code to vote for the Argentinean Ambassador Tango Cup 2021</title>
+        </head>
+        <body>
+        <p></p>
+        <p>Dear $votername:</p>
+        <p>Thank you for participating in the Argentinean Ambassador Tango Cup 2021.</p>
+        <p>Your personal code for voting is: $personal_code</p>
+        <p>You can use this code to vote at: https://vote.ambassadortangocup.com</p>
+        <p>All the best</p>
+        </body>
+        </html>
+        ";
 
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-        $headers .= 'From: <enquiry@example.com>' . "\r\n";
-        $headers .= 'Cc: myboss@example.com' . "\r\n";
+        $headers .= 'From: <votes@ambassadortangocup.com>' . "\r\n";
 
         mail($to, $subject, $message, $headers);
 

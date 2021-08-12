@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htdocs/vote/actions/votingcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/vote/actions/votingcode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htdocs/vote/data/evote.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/vote/data/evote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/vote/index/vote/code.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/vote/index/vote/code.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628757048156</updated>
-      <workItem from="1628757050148" duration="13809000" />
+      <workItem from="1628757050148" duration="14913000" />
     </task>
     <servers />
   </component>
