@@ -13,11 +13,12 @@ if (isset($_POST['button'])) {
         if (!isset($_POST['email'])) {
             $ok = false;
             $dialogue->appendMessage('You need to enter a valid email', 'error');
-        } elseif (!$evote->checkEmail($_POST['email'])) {
+            echo "no hay email";
+        } elseif (!$evote->votermailExists($_POST['email'])) {
             $ok = false;
-            $dialogue->appendMessage('Please try again', 'error');
+            $dialogue->appendMessage('The email entered was already used', 'error');
+            echo "email duplicado";
         }
-
         if ($ok) {
             $email = $_POST['email'];
 

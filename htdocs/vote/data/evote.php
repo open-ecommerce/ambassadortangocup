@@ -267,6 +267,13 @@ class Evote {
         }
     }
 
+    public function votermailExists($email){
+        $conn = $this->connect();
+        $sql =  "SELECT * FROM elections_codes WHERE email=\"$email\"";
+        $res = $conn->query($sql);
+        return ($res->num_rows > 0);
+    }
+
     public function newRound($name, $code, $max, $options){
         $conn = $this->connect();
         $ok = TRUE;
