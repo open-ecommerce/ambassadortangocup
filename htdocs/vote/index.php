@@ -53,7 +53,7 @@ if(isset($nav[1])){
     <!-- Header -->
     <div class="fixed-header">
 
-<?php if($module != 'vote' && $module != ''): ?>
+<?php if($module != 'vote' && $module != '' && $module != 'getcode'): ?>
         <div class="navbar navbar-inverse navbar-default" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -67,21 +67,7 @@ if(isset($nav[1])){
                         <span>E-vote</span>
                     </a>
                 </div>
-
                <div>
-
-<!--                      <ul class="nav navbar-nav navbar-right">
-
-                      <li class="dropdown user-dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Dropdown<span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>Insert link here</li>
-                                <li>Logout</li>
-                            </ul>
-                        </li>
-                    </ul>-->
                 </div>
             </div>
         </div>
@@ -110,7 +96,6 @@ if(isset($nav[1])){
                         }
                         echo '<li><a href="/logout">Logout</a></li>';
                     }
-                    #echo "<li class=\"nav-header disabled\"><a><hr class=sidebarruler></a></li>";
                 }
                 ?>
             </ul>
