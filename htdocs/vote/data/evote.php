@@ -476,7 +476,7 @@ class Evote {
 
         mail($to, $subject, $message, $headers);
 
-        $sql1 = "UPDATE elections_codes SET email=".$email." WHERE code=$personal_code";
+        $sql1 = "UPDATE elections_codes SET email=".$email." WHERE code=".$personal_code;
         $conn->multi_query($sql1);
         echo $conn->error;
         return TRUE;
