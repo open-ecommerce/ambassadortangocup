@@ -27,9 +27,12 @@ if (isset($_POST['button'])) {
             } else {
                 $dialogue->appendMessage('Problems to send the code. This could be because you entered an invalid email', 'error');
             }
+            echo "is ok";
+        } else {
+            echo "is not ok";
         }
 
-        $_SESSION['message'] = serialize($dialogue);
-        header('Location: index');
+//        $_SESSION['message'] = serialize($dialogue);
+//        header('Location: index');
     }
 }
