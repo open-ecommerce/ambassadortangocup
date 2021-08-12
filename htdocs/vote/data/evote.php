@@ -453,12 +453,13 @@ class Evote {
         $r = $conn->query($sql);
         $isNewMail = TRUE;
         if($r->num_rows > 0){
+            $isNewMail = FALSE;
             while($row = $r->fetch_assoc()){
                 $personal_code_ok = TRUE;
                 $personal_code = $row["code_raw"];
-                $isNewMail = FALSE;
             }
         } else {
+            $isNewMail = TRUE;
             $sql1 = "SELECT code_raw FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
             $personal_code=0;
             $r1 = $conn->query($sql1);
