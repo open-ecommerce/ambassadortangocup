@@ -437,7 +437,6 @@ class Evote {
 
     public function endSession(){
         $conn = $this->connect();
-
         $sql .= "UPDATE sessions SET end=now() WHERE active=1;";
         $sql .= "UPDATE sessions SET active=0;";
         $sql .= "TRUNCATE TABLE elections;";
@@ -446,27 +445,25 @@ class Evote {
         $sql .= "TRUNCATE TABLE elections_usage;";
         $conn->multi_query($sql);
         $conn->close();
-
     }
 
-    public function getVotingCode($email){
+    public function sendVotingCode($email){
         $conn = $this->connect();
-        $hash = crypt($personal_code, "duvetvad");
-        $sql2 = "SELECT id FROM elections_codes WHERE (code=\"$hash\" AND active IS NULL)";
-        $r2 = $conn->query($sql2);
+        $sql1 = "SELECT code FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
+        $personal_code=0;
+        $r1 = $conn->query($sql1);
         $personal_code_ok = FALSE;
-        $id = -1;
-        if($r2->num_rows > 0){
-            while($row = $r2->fetch_assoc()){
+        if($r1->num_rows > 0){
+            while($row = $r1->fetch_assoc()){
                 $personal_code_ok = TRUE;
-                $id = $row["id"];
+                $personal_code = $row["code"];
             }
         }
         $to = $email;
         $subject = "Your personal code to vote";
 
         $message = 'Dear Tanguer@,<br>';
-        $message .= "your personal code for vote is: 666 <br><br>";
+        $message .= "your personal code for vote is:".$personal_code. "<br><br>";
         $message .= "Regards,<br>";
 
 // Always set content-type when sending HTML email
@@ -479,6 +476,10 @@ class Evote {
 
         mail($to, $subject, $message, $headers);
 
+        $sql1 = "UPDATE elections_codes SET email=".$email." WHERE code=$personal_code";
+        $conn->multi_query($sql1);
+        echo $conn->error;
+        return TRUE;
 
     }
     public function checkCheating(){

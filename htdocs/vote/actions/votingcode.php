@@ -22,7 +22,7 @@ if (isset($_POST['button'])) {
         if ($ok) {
             $email = $_POST['email'];
 
-            if ($evote->sendCode($email)) {
+            if ($evote->sendVotingCode($email)) {
                 $dialogue->appendMessage('Your code has being sent to your email', 'success');
             } else {
                 $dialogue->appendMessage('Problems to send the code. This could be because you entered an invalid email', 'error');
