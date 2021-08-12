@@ -125,7 +125,7 @@ if(isset($nav[1])){
         <div class="col-lg-12 voting centered">
     <?php endif; ?>
 <?php
-    $configured = file_exists('/data/config.php');
+    $configured = file_exists('data/config.php');
     if(!$configured){
         echo '<h4>E-vote måste konfigureras</h4>';
     }elseif($module == 'vote'){
