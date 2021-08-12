@@ -78,7 +78,7 @@ $nav = explode('/',$tr);
     if(!$configured){
         echo '<h4>Check configuration</h4>';
     }else{
-        include 'index/vote/votingcode.php';
+        include 'index/vote/code.php';
     }
 ?>
     </div>
