@@ -64,12 +64,7 @@ if (!$evote->ongoingSession()) {
                                     checkboxes[i].disabled = true;
                                 }
                             }
-
-
                         }
-
-                    </script>
-
                     </script>
                     <div class="vote-code">
                         <label >Your secret voting code:</label>

@@ -29,6 +29,6 @@ if (isset($_POST['button'])) {
             }
         }
         $_SESSION['message'] = serialize($dialogue);
-        header('Location: index');
+        header('Location: /index');
     }
 }

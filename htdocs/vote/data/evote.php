@@ -449,25 +449,30 @@ class Evote {
 
     public function sendVotingCode($email, $votername){
         $conn = $this->connect();
-        $sql1 = "SELECT code FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
-        $personal_code=0;
-        $r1 = $conn->query($sql1);
-        $personal_code_ok = FALSE;
-        if($r1->num_rows > 0){
-            while($row = $r1->fetch_assoc()){
+        $sql1 = "SELECT code FROM elections_codes WHERE email = $email";
+        $r = $conn->query($sql);
+        $isNewMail = TRUE;
+        if($r->num_rows > 0){
+            while($row = $r->fetch_assoc()){
                 $personal_code_ok = TRUE;
                 $personal_code = $row["code"];
+                $isNewMail = FALSE;
+            }
+        } else {
+            $sql1 = "SELECT code FROM elections_codes WHERE (active IS NULL AND email IS NULL)";
+            $personal_code=0;
+            $r1 = $conn->query($sql1);
+            $personal_code_ok = FALSE;
+            if($r1->num_rows > 0){
+                while($row = $r1->fetch_assoc()){
+                    $personal_code_ok = TRUE;
+                    $personal_code = $row["code"];
+                }
             }
         }
+
         $to = $email;
         $subject = "Your personal code to vote for the Argentinean Ambassador Tango Cup 2021";
-
-//        $message = 'Dear '.$votername.': \r\n';
-//        $message .= "Thank you for participating in the Argentinean Ambassador Tango Cup 2021. \r\n";
-//        $message .= "Your personal code for voting is:".$personal_code . "\r\n";
-//        $message .= "You can use this code to vote at: https://vote.ambassadortangocup.com \r\n";
-//        $message .= "All the best";
-
         $message = "
         <html>
         <head>
@@ -483,19 +488,16 @@ class Evote {
         </body>
         </html>
         ";
-
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
         $headers .= 'From: <votes@ambassadortangocup.com>' . "\r\n";
-
         mail($to, $subject, $message, $headers);
-
-        $sql1 = "UPDATE elections_codes SET email='".$email."' WHERE code = '".$personal_code."'";
-
-        $conn->multi_query($sql1);
-        echo $conn->error;
+        if ($isNewMail) {
+            $sql1 = "UPDATE elections_codes SET email='" . $email . "' WHERE code = '" . $personal_code . "'";
+            $conn->multi_query($sql1);
+            echo $conn->error;
+        }
         return TRUE;
-
     }
     public function checkCheating(){
         $conn = $this->connect();
