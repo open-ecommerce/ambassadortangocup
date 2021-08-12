@@ -152,8 +152,6 @@
   }
 
   .logo {
-    height: 75px;
-    padding: 12px;
     display: block;
   }
 
@@ -237,7 +235,6 @@
 }
 
 .alert-danger {margin-top: 2px;}
-
 
 img#logo-header {
     max-width: 100%;
