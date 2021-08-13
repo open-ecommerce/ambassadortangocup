@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8da60fcc-c6bf-4138-9e1a-1f7a58d67b7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htdocs/vote/data/evote.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/vote/data/evote.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/vote/index-no-yet.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/vote/index-no-yet.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,13 +26,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/vote/index/vote" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/htdocs/vote/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/htdocs/vote/images" />
       <recent name="$PROJECT_DIR$/htdocs/vote/index/vote" />
       <recent name="$PROJECT_DIR$/htdocs/vote/actions" />
       <recent name="$PROJECT_DIR$/htdocs/vote" />
@@ -47,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1628757048156</updated>
       <workItem from="1628757050148" duration="23532000" />
+      <workItem from="1628850962017" duration="272000" />
     </task>
     <servers />
   </component>
